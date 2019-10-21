@@ -1,0 +1,1 @@
+scp -r ./* root@candy1874.xyz:/hello
