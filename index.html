@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="js/jquery-3.3.1.js">
-
-    </script>
     <style>
         .a{
             outline: 1px red solid
@@ -30,10 +27,11 @@
             </div>
         </div>
     </div>
-    <h1>当前登陆的用户是:<b id="as"></b></h1>
+    <h1>懒猪王迪</h1>
+    <h1>我爱你王迪</h1>
     <div id="wfoot" class="a" style="height: 50px; margin: 0px auto" align="center">
         <p>
-         <a href="sunwukong.html">本人自拍照</a>
+         <a>关于腾讯</a>
          <a>关于腾讯</a>
          <a>关于腾讯</a>
          <a>关于腾讯</a>
@@ -41,26 +39,6 @@
          <a>关于腾讯</a>
           @1998-2019 Tencent</p>
     </div>
-    <button onclick="cli()">点击我</button>
 </div>
-<script>
-    function cli(){
-        var data={
-            "usercode":"admin",
-            "userpassword":"123456"
-        }
-        $.ajax({
-            url:'http://candy1874.xyz:8080/candy/user/login',
-            type:'POST',
-            dataType:"json",
-            contentType:"application/json",
-            data:JSON.stringify(data),
-            success:function (rept) {
-                $("#as").text(rept.data.name)
-            }
-        })
-    }
-
-</script>
 </body>
 </html>
